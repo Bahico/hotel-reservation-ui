@@ -1,5 +1,5 @@
 import {Component, inject, input, OnInit, signal} from "@angular/core";
-import {ICON_LIST} from "@shared/icon/icon-list";
+import {ICON_LIST} from "./icon-list";
 import {DomSanitizer, SafeHtml} from "@angular/platform-browser";
 
 @Component({
@@ -16,14 +16,18 @@ export class IconComponent implements OnInit {
   iconHtml = signal<SafeHtml>(undefined);
 
   ngOnInit() {
-    this.iconHtml.set(this.sanitizeHtml(this.iconElement));
+    this.setIconHtml();
+  }
+
+  setIconHtml(iconName: string = this.icon()) {
+    this.iconHtml.set(this.sanitizeHtml(this.iconElement(iconName)));
   }
 
   sanitizeHtml(html: string): SafeHtml {
     return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 
-  get iconElement() {
-    return ICON_LIST.find(item => item.name === this.icon())?.icon;
+  iconElement(iconName: string) {
+    return ICON_LIST.find(item => item.name === iconName)?.icon;
   }
 }

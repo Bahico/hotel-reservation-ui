@@ -1,5 +1,5 @@
 import {Component, input, output} from '@angular/core';
-import {IconComponent} from '@shared/icon/icon.component';
+import {IconComponent} from 'shared/icon/icon.component';
 
 @Component({
   selector: 'dashboard-sidebar',
