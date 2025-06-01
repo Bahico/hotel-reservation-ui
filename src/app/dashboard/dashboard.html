@@ -1,5 +1,5 @@
-<div class="dashboard">
-  <dashboard-sidebar />
+<div class="dashboard" [class.collapsed]="sidebarCollapsed()">
+  <dashboard-sidebar [(collapsed)]="sidebarCollapsed" />
 
   <div class="dashboard-content">
     <dashboard-navbar />

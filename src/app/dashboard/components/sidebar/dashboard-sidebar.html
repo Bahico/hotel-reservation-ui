@@ -1,11 +1,7 @@
 <div class="dashboard-sidebar">
   <div class="sidebar_header">
-    <div class="sidebar_logo">
-<!--      <icon-list icon="logo" />-->
-
-      @if (!collapsed()) {
-        Hotel
-      }
+    <div class="sidebar_logo" [class.active]="collapsed()">
+      Hotel
     </div>
 
     <button (click)="toggleSidebar()" class="sidebar_toggle_button">

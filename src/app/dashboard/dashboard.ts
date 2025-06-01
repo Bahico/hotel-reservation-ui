@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, signal} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {DashboardSidebar} from './components/sidebar/dashboard-sidebar';
 import {DashboardNavbar} from './components/navbar/dashboard-navbar';
@@ -13,5 +13,5 @@ import {DashboardNavbar} from './components/navbar/dashboard-navbar';
   styleUrl: 'dashboard.scss'
 })
 export class Dashboard {
-
+  sidebarCollapsed = signal(false);
 }

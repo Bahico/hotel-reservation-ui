@@ -7,9 +7,14 @@
       "@shared/*": ["./src/app/shared/*"],
       "@core/*": ["./src/app/core/*"],
       "@config/*": ["./src/app/config/*"],
-      "@pages/*": ["./src/app/dashboard/pages/*"]
+      "@pages/*": [
+        "./src/app/dashboard/pages/*"
+      ],
+      "hotel-components": [
+        "./dist/hotel-components"
+      ]
     },
-    "strict": true,
+    "strict": false,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -35,6 +40,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/hotel-components/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/hotel-components/tsconfig.spec.json"
     }
   ]
 }
