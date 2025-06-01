@@ -1,0 +1,13 @@
+.dashboard-sidebar {
+  background-color: var(--secondary-color);
+  width: 232px;
+  height: calc(100vh - (var(--padding) * 2));
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: var(--padding);
+  position: sticky;
+  left: 16px;
+  top: 16px;
+}
