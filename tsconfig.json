@@ -42,10 +42,10 @@
       "path": "./tsconfig.spec.json"
     },
     {
-      "path": "./projects/hotel-components/tsconfig.lib.json"
+      "path": "./libs/hotel-components/tsconfig.lib.json"
     },
     {
-      "path": "./projects/hotel-components/tsconfig.spec.json"
+      "path": "./libs/hotel-components/tsconfig.spec.json"
     }
   ]
 }

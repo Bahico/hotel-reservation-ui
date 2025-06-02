@@ -95,18 +95,18 @@
     },
     "hotel-components": {
       "projectType": "library",
-      "root": "projects/hotel-components",
-      "sourceRoot": "projects/hotel-components/src",
+      "root": "libs/hotel-components",
+      "sourceRoot": "libs/hotel-components/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular/build:ng-packagr",
           "configurations": {
             "production": {
-              "tsConfig": "projects/hotel-components/tsconfig.lib.prod.json"
+              "tsConfig": "libs/hotel-components/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/hotel-components/tsconfig.lib.json"
+              "tsConfig": "libs/hotel-components/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -114,7 +114,7 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "tsConfig": "projects/hotel-components/tsconfig.spec.json",
+            "tsConfig": "libs/hotel-components/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
