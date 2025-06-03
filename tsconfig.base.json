@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "preserve",
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@hotel-components": ["../../libs/hotel-components/src/index.ts"],
+      "config/*": ["./src/app/config/*"],
+      "core/*": ["./src/app/core/*"],
+      "pages/*": ["./src/app/dashboard/pages/*"],
+      "shared/*": ["./src/app/shared/*"],
+      "staff/Routes": ["projects/staff/src/app/remote-entry/entry.routes.ts"]
+    }
+  }
+}

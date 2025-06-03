@@ -1,0 +1,97 @@
+{
+  "name": "hotel-reservation-ui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "dashboard",
+  "sourceRoot": "projects/hotel-reservation-ui/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:webpack-browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/projects/hotel-reservation-ui",
+        "index": "projects/hotel-reservation-ui/src/index.html",
+        "main": "projects/hotel-reservation-ui/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "projects/hotel-reservation-ui/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "projects/hotel-reservation-ui/public"
+          }
+        ],
+        "styles": ["projects/hotel-reservation-ui/src/styles.scss"],
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "projects/hotel-reservation-ui/webpack.config.ts"
+        }
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "projects/hotel-reservation-ui/webpack.prod.config.ts"
+          }
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@nx/angular:module-federation-dev-server",
+      "options": {
+        "port": 4200,
+        "publicHost": "http://localhost:4200"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "hotel-reservation-ui:build:production"
+        },
+        "development": {
+          "buildTarget": "hotel-reservation-ui:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "hotel-reservation-ui:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "hotel-reservation-ui:build",
+        "port": 4200,
+        "spa": true
+      }
+    }
+  }
+}
