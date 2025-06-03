@@ -1,13 +1,11 @@
-import { NxWelcomeComponent } from './nx-welcome.component';
-import { Route } from '@angular/router';
+import {Route} from '@angular/router';
+import dashboardRoutes from './dashboard/dashboard.routes';
 
 export const appRoutes: Route[] = [
   {
-    path: 'staff',
-    loadChildren: () => import('staff/Routes').then((m) => m),
-  },
-  {
     path: '',
-    component: NxWelcomeComponent,
+    redirectTo: 'dashboard',
+    pathMatch: 'full'
   },
+  dashboardRoutes
 ];
