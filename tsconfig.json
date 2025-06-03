@@ -46,6 +46,12 @@
     },
     {
       "path": "./libs/hotel-components/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/staff/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/staff/tsconfig.spec.json"
     }
   ]
 }

@@ -6,9 +6,11 @@
     "serve": "bun start",
     "start": "ng serve",
     "build": "ng build",
+    "build:hotel-components": "ng build hotel-components",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:hotel-reservation-ui": "node dist/hotel-reservation-ui/server/server.mjs"
+    "serve:ssr:hotel-reservation-ui": "node dist/hotel-reservation-ui/server/server.mjs",
+    "serve:ssr:staff": "node dist/staff/server/server.mjs"
   },
   "private": true,
   "dependencies": {

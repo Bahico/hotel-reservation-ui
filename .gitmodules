@@ -1,3 +1,7 @@
 [submodule "libs/hotel-components"]
 	path = libs/hotel-components
 	url = https://github.com/Bahico/hotel-components.git
+
+[submodule "libs/staff-microfrontend"]
+	path = libs/staff
+	url = https://github.com/Bahico/staff-microfrontend.git
