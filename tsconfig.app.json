@@ -8,6 +8,10 @@
       "node"
     ]
   },
+  "angularCompilerOptions": {
+    "enableIvy": true,
+    "compilationMode": "full"
+  },
   "include": [
     "src/**/*.ts"
   ],

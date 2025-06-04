@@ -5,7 +5,7 @@ declare module 'staff/routes' {
 }
 
 declare module 'staff/dashboard.items' {
-  import {DashboardItem} from '@components';
+  import {DashboardItem} from '@components/models';
   const items: DashboardItem[];
   export default items;
 }
