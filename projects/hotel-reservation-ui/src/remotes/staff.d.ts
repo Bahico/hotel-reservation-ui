@@ -5,7 +5,7 @@ declare module 'staff/routes' {
 }
 
 declare module 'staff/dashboard.items' {
-  import {DashboardItem} from '@hotel-components';
+  import {DashboardItem} from '@components';
   const items: DashboardItem[];
   export default items;
 }

@@ -1,5 +1,5 @@
 import {Component, input, output, signal} from '@angular/core';
-import {DashboardItem, IconComponent} from '@hotel-components';
+import {DashboardItem, IconComponent} from '@components';
 import staffDashboardItems from 'staff/dashboard.items';
 
 @Component({

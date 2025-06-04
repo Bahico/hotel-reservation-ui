@@ -6,9 +6,6 @@
     "target": "ES2022",
     "module": "preserve",
     "skipLibCheck": true,
-    "baseUrl": "./",
-    "paths": {
-      "@hotel-components": ["../../libs/hotel-components/src/index.ts"]
-    }
+    "baseUrl": "./"
   }
 }

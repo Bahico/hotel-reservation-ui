@@ -6,7 +6,10 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "isolatedModules": true,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "paths": {
+      "@components": ["libs/hotel-components/src/index.ts"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

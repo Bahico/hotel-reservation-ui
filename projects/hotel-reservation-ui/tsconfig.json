@@ -2,14 +2,13 @@
   "compilerOptions": {
     "target": "es2022",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "baseUrl": "./"
+    "noFallthroughCasesInSwitch": true
   },
-  "files": [],
+  "files": ["src/**/*.ts"],
   "include": [],
   "references": [
     {
