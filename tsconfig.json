@@ -6,9 +6,10 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "isolatedModules": true,
+    "declaration": false,
     "baseUrl": "./",
     "paths": {
-      "@components": ["libs/hotel-components/src/index.ts"]
+      "@components/*": ["libs/hotel-components/src/lib/*"]
     }
   },
   "angularCompilerOptions": {
@@ -16,7 +17,8 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "typeCheckHostBindings": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "strictStandalone": false
   },
   "files": [],
   "references": [

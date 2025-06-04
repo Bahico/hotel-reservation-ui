@@ -1,5 +1,6 @@
 import {Component, input, output, signal} from '@angular/core';
-import {DashboardItem, IconComponent} from '@components';
+import {IconComponent} from '@components/components';
+import {DashboardItem} from '@components/models';
 import staffDashboardItems from 'staff/dashboard.items';
 
 @Component({
