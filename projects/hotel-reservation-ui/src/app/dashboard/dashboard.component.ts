@@ -2,6 +2,7 @@ import {Component, signal} from '@angular/core';
 import {RouterOutlet} from '@angular/router';
 import {DashboardNavbarComponent, DashboardSidebarComponent} from '@components/layout';
 import staffDashboardItems from 'staff/dashboard.items';
+import organizationDashboardItems from 'organization/dashboard.items';
 import {DashboardItem} from '@components/models';
 
 @Component({
@@ -17,6 +18,7 @@ export class DashboardComponent {
   sidebarCollapsed = signal(false);
 
   dashboardItems = signal<DashboardItem[]>([
-    ...staffDashboardItems
+    ...staffDashboardItems,
+    ...organizationDashboardItems
   ])
 }

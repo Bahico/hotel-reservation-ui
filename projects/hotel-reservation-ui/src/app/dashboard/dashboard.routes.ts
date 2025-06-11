@@ -7,6 +7,10 @@ export default {
     {
       path: 'staff',
       loadChildren: () => import('staff/routes'),
+    },
+    {
+      path: 'organization',
+      loadChildren: () => import('organization/routes'),
     }
   ]
 } satisfies Route;
