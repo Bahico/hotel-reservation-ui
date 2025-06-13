@@ -1,4 +1,4 @@
-import { ModuleFederationConfig } from '@nx/module-federation';
+import {ModuleFederationConfig} from '@nx/module-federation';
 
 const config: ModuleFederationConfig = {
   name: 'hotel-reservation-ui',
@@ -14,7 +14,7 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['staff', 'organization'],
+  remotes: ['staff', 'organization']
 };
 
 /**

@@ -4,6 +4,7 @@ import {DashboardNavbarComponent, DashboardSidebarComponent} from '@components/l
 import staffDashboardItems from 'staff/dashboard.items';
 import organizationDashboardItems from 'organization/dashboard.items';
 import {DashboardItem} from '@components/models';
+import {TranslatePipe} from '@ngx-translate/core';
 
 @Component({
   imports: [
