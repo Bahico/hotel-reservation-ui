@@ -7,6 +7,7 @@
     "noFallthroughCasesInSwitch": true,
     "isolatedModules": true,
     "declaration": false,
+    "emitDecoratorMetadata": true,
     "baseUrl": "./",
     "paths": {
       "@components/*": ["libs/hotel-components/src/lib/*"]

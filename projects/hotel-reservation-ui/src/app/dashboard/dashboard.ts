@@ -5,8 +5,7 @@ import staffDashboardItems from 'staff/dashboard.items';
 import organizationDashboardItems from 'organization/dashboard.items';
 import {DashboardItem} from '@components/models';
 import {RootSharedModule} from '@components/root-shared.module';
-import {NzTableComponent, NzTableModule} from 'ng-zorro-antd/table';
-import {NzDividerComponent} from 'ng-zorro-antd/divider';
+import {NzTableModule} from 'ng-zorro-antd/table';
 
 @Component({
   imports: [
@@ -14,8 +13,7 @@ import {NzDividerComponent} from 'ng-zorro-antd/divider';
     DashboardSidebarComponent,
     DashboardNavbarComponent,
     RootSharedModule,
-    NzTableModule,
-    NzDividerComponent
+    NzTableModule
   ],
   templateUrl: 'dashboard.html',
   styleUrl: 'dashboard.scss'
