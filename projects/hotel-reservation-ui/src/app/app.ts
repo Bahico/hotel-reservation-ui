@@ -1,15 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import {Component} from '@angular/core';
+import {RouterModule} from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
-import {Button} from 'primeng/button';
 
 @Component({
-  imports: [RouterModule, Button],
+  imports: [RouterModule],
   selector: 'dashboard-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  templateUrl: 'app.html',
+  styleUrl: 'app.scss',
 })
-export class AppComponent {
+export class App {
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['de', 'en']);
     this.translate.setDefaultLang('en');
