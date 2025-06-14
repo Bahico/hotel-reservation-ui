@@ -24,7 +24,9 @@
         ],
         "styles": [
           "projects/hotel-reservation-ui/public/scss/styles.scss",
-          "projects/hotel-reservation-ui/public/scss/font.scss"
+          "projects/hotel-reservation-ui/public/scss/font.scss",
+          "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+
         ],
         "scripts": [],
         "customWebpackConfig": {

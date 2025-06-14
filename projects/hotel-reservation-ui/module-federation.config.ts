@@ -37,7 +37,7 @@ const config: ModuleFederationConfig = {
       sharedConfig: {
         singleton: true,
         strictVersion: true,
-        requiredVersion: '20.0.0'
+        requiredVersion: '19.2.14'
       }
     },
     // {

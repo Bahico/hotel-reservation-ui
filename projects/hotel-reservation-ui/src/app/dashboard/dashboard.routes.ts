@@ -2,7 +2,7 @@ import {Route} from '@angular/router';
 
 export default {
   path: 'dashboard',
-  loadComponent: () => import('./dashboard.component').then(m => m.DashboardComponent),
+  loadComponent: () => import('./dashboard').then(m => m.Dashboard),
   children: [
     {
       path: 'staff',
