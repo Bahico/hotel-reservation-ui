@@ -7,8 +7,5 @@
     "module": "preserve",
     "skipLibCheck": true,
     "baseUrl": "./",
-    "paths": {
-      "hotel/Routes": ["projects/hotel/src/app/remote-entry/entry.routes.ts"]
-    }
   }
 }

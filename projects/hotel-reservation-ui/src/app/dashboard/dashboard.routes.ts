@@ -11,6 +11,10 @@ export default {
     {
       path: 'organization',
       loadChildren: () => import('organization/routes'),
+    },
+    {
+      path: 'hotel',
+      loadChildren: () => import('hotel/routes'),
     }
   ]
 } satisfies Route;

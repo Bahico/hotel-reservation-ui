@@ -3,6 +3,7 @@ import {RouterOutlet} from '@angular/router';
 import {DashboardNavbarComponent, DashboardSidebarComponent} from '@components/layout';
 import staffDashboardItems from 'staff/dashboard.items';
 import organizationDashboardItems from 'organization/dashboard.items';
+import hotelDashboardItems from 'hotel/dashboard.items';
 import {DashboardItem} from '@components/models';
 import {RootSharedModule} from '@components/root-shared.module';
 import {NzTableModule} from 'ng-zorro-antd/table';
@@ -23,6 +24,7 @@ export class Dashboard {
 
   dashboardItems = signal<DashboardItem[]>([
     ...staffDashboardItems,
-    ...organizationDashboardItems
+    ...organizationDashboardItems,
+    ...hotelDashboardItems
   ])
 }
