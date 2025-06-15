@@ -6,6 +6,10 @@
 	path = projects/staff
 	url = https://github.com/Bahico/staff-microfrontend.git
 
+[submodule "projects/hotel"]
+	path = projects/hotel
+	url = https://github.com/Bahico/hotel-microfrontend.git
+
 [submodule "projects/organization"]
 	path = projects/organization
 	url = https://github.com/Bahico/organization.git

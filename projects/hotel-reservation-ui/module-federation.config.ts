@@ -1,4 +1,4 @@
-import {ModuleFederationConfig} from '@nx/module-federation';
+import { ModuleFederationConfig } from '@nx/module-federation';
 
 const config: ModuleFederationConfig = {
   name: 'hotel-reservation-ui',
@@ -14,31 +14,31 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['staff', 'organization'],
+  remotes: ['staff', 'organization', 'hotel'],
   additionalShared: [
     {
       libraryName: '@ngx-translate/core',
       sharedConfig: {
         singleton: true,
         strictVersion: true,
-        requiredVersion: '16.0.4'
-      }
+        requiredVersion: '16.0.4',
+      },
     },
     {
       libraryName: '@ngx-translate/http-loader',
       sharedConfig: {
         singleton: true,
         strictVersion: true,
-        requiredVersion: '16.0.1'
-      }
+        requiredVersion: '16.0.1',
+      },
     },
     {
       libraryName: '@angular/router',
       sharedConfig: {
         singleton: true,
         strictVersion: true,
-        requiredVersion: '19.2.14'
-      }
+        requiredVersion: '19.2.14',
+      },
     },
     // {
     //   libraryName: 'ng-zorro-antd',
@@ -48,7 +48,7 @@ const config: ModuleFederationConfig = {
     //     requiredVersion: '19.3.1'
     //   }
     // }
-  ]
+  ],
 };
 
 /**
