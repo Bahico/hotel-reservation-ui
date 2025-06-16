@@ -1,4 +1,5 @@
 import {Route} from '@angular/router';
+import authorizationRoutes from 'authorization/routes';
 
 export default {
   path: 'dashboard',
@@ -15,6 +16,7 @@ export default {
     {
       path: 'hotel',
       loadChildren: () => import('hotel/routes'),
-    }
+    },
+    ...authorizationRoutes
   ]
 } satisfies Route;
