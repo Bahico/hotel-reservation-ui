@@ -5,6 +5,32 @@ const config: ModuleFederationConfig = {
   exposes: {
     './routes': 'apps/authorization/src/app/remote-entry/entry.routes.ts',
   },
+  additionalShared: [
+    {
+      libraryName: '@ngx-translate/core',
+      sharedConfig: {
+        singleton: true,
+        strictVersion: true,
+        requiredVersion: '16.0.4'
+      }
+    },
+    {
+      libraryName: '@ngx-translate/http-loader',
+      sharedConfig: {
+        singleton: true,
+        strictVersion: true,
+        requiredVersion: '16.0.1'
+      }
+    },
+    {
+      libraryName: '@angular/router',
+      sharedConfig: {
+        singleton: true,
+        strictVersion: true,
+        requiredVersion: '19.2.14'
+      }
+    }
+  ]
 };
 
 /**
