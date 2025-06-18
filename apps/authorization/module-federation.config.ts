@@ -21,14 +21,6 @@ const config: ModuleFederationConfig = {
         strictVersion: true,
         requiredVersion: '16.0.1'
       }
-    },
-    {
-      libraryName: '@angular/router',
-      sharedConfig: {
-        singleton: true,
-        strictVersion: true,
-        requiredVersion: '19.2.14'
-      }
     }
   ]
 };
