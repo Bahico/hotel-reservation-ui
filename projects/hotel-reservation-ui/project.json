@@ -16,6 +16,7 @@
         "polyfills": ["zone.js"],
         "tsConfig": "projects/hotel-reservation-ui/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
+        "aot": false,
         "assets": [
           {
             "glob": "**/*",
