@@ -15,7 +15,7 @@ export default {
     },
     {
       path: 'hotel',
-      loadChildren: () => import('hotel/routes'),
+      loadChildren: () => import('hotel-microfrontend/routes'),
     },
     ...authorizationRoutes
   ]
