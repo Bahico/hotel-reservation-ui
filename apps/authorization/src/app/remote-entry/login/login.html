@@ -1,17 +1,14 @@
 <div class="login-app">
   <form class="login-form" (ngSubmit)="login()">
-    <label>
-      Username:
+    <div class="control">
+      <label>Username:</label>
       <input type="text" name="username" [(ngModel)]="username" />
-    </label>
-    <label>
-      Password:
+    </div>
+    <div class="control">
+      <label>Password:</label>
       <input type="password" name="password" [(ngModel)]="password" />
-    </label>
+    </div>
+
     <button type="submit">Login</button>
   </form>
-
-  @if (isLoggedIn()) {
-    <div>User is logged in!</div>
-  }
 </div>

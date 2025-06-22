@@ -73,7 +73,7 @@
         }
       },
       "defaultConfiguration": "development",
-      "dependsOn": ["hotel-reservation-ui:serve"]
+      "dependsOn": []
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",

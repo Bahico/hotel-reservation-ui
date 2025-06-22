@@ -1,9 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { UserAuth } from 'data-access-user';
-import { inject } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { LoginService } from 'data-access-user';
 
 @Component({
   imports: [CommonModule, FormsModule],
@@ -12,12 +10,11 @@ import { toSignal } from '@angular/core/rxjs-interop';
   styleUrl: 'login.scss',
 })
 export class Login {
-  private userService = inject(UserAuth);
+  private userService = inject(LoginService);
   username = '';
   password = '';
-  isLoggedIn = toSignal(this.userService.isUserLoggedIn$);
 
   login() {
-    this.userService.checkCredentials(this.username, this.password);
+    this.userService.login(this.username, this.password);
   }
 }
