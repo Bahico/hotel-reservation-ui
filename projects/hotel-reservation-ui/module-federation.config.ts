@@ -14,7 +14,7 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['staff', 'organization', 'hotel-microfrontend', 'authorization'],
+  remotes: ['staff', 'organization', 'hotel', 'authorization'],
   additionalShared: [
     {
       libraryName: '@ngx-translate/core',

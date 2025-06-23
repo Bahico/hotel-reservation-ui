@@ -1,8 +1,7 @@
-import {Route} from '@angular/router';
-import {Login} from './login/login';
-import {Register} from './register';
+import { Route } from '@angular/router';
+import { Register } from './register';
 
 export default [
-  { path: 'login', component: Login },
+  { path: 'login', loadComponent: () => import('./login/login') },
   { path: 'register', component: Register }
 ] satisfies Route[];

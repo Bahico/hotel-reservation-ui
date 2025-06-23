@@ -5,11 +5,11 @@ export const appRoutes: Route[] = [
   {
     path: '',
     redirectTo: 'dashboard',
-    pathMatch: 'full',
+    pathMatch: 'full'
   },
   dashboardRoutes,
   {
     path: 'authorization',
-    loadChildren: () => import('authorization/routes'),
-  },
+    loadChildren: () => import('authorization/routes')
+  }
 ];

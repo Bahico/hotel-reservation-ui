@@ -10,8 +10,7 @@
     "emitDecoratorMetadata": true,
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["libs/hotel-components/src/lib/*"],
-      "data-access-user": ["libs/shared/data-access-user/src/index.ts"]
+      "@components/*": ["libs/hotel-components/src/lib/*"]
     }
   },
   "angularCompilerOptions": {

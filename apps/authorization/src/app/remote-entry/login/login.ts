@@ -1,15 +1,15 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { LoginService } from 'data-access-user';
+import { LoginService } from '@components/account';
 
 @Component({
   imports: [CommonModule, FormsModule],
-  selector: 'ng-mf-login-entry',
+  selector: 'login',
   templateUrl: 'login.html',
   styleUrl: 'login.scss',
 })
-export class Login {
+export default class Login {
   private userService = inject(LoginService);
   username = '';
   password = '';
