@@ -5,7 +5,7 @@ import { provideTranslateService, TranslateLoader } from '@ngx-translate/core';
 import { HttpClient, provideHttpClient, withFetch, withInterceptors } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { provideNzI18n, en_US } from 'ng-zorro-antd/i18n';
+import { en_US, provideNzI18n } from 'ng-zorro-antd/i18n';
 import { interceptors } from '@components/core/interceptors';
 
 const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (http: HttpClient) =>
