@@ -14,7 +14,7 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['staff', 'organization', 'hotel', 'authorization'],
+  remotes: ['staff', 'organization', 'hotel', 'authorization', 'user'],
   additionalShared: [
     {
       libraryName: '@ngx-translate/core',
@@ -40,14 +40,6 @@ const config: ModuleFederationConfig = {
         requiredVersion: '19.2.14',
       },
     },
-    // {
-    //   libraryName: 'ng-zorro-antd',
-    //   sharedConfig: {
-    //     singleton: true,
-    //     eager: true,
-    //     requiredVersion: '19.3.1'
-    //   }
-    // }
   ],
 };
 
