@@ -13,3 +13,7 @@
 [submodule "projects/organization"]
 	path = projects/organization
 	url = https://github.com/Bahico/organization.git
+
+[submodule "projects/user"]
+	path = projects/user
+	url = https://github.com/Bahico/user.git
