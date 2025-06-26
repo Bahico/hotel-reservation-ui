@@ -50,3 +50,5 @@ bun.lockb
 .cursor/rules/nx-rules.mdc
 .github/instructions/nx.instructions.md
 .angular
+
+tools/entity/node_modules
