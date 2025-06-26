@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { DashboardNavbarComponent, DashboardSidebarComponent } from '@components/layout';
+import { DashboardNavbar, DashboardSidebar } from '@components/layout';
 import staffDashboardItems from 'staff/dashboard.items';
 import organizationDashboardItems from 'organization/dashboard.items';
 import hotelDashboardItems from 'hotel/dashboard.items';
@@ -11,8 +11,8 @@ import { NzTableModule } from 'ng-zorro-antd/table';
 @Component({
   imports: [
     RouterOutlet,
-    DashboardSidebarComponent,
-    DashboardNavbarComponent,
+    DashboardSidebar,
+    DashboardNavbar,
     RootSharedModule,
     NzTableModule
   ],

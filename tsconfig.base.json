@@ -9,7 +9,6 @@
     "baseUrl": "./",
     "paths": {
       "entity": ["tools/entity/src/index.ts"],
-      "user/Routes": ["projects/user/src/app/remote-entry/entry.routes.ts"]
     }
   }
 }
