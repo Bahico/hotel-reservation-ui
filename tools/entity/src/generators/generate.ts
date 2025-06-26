@@ -6,6 +6,7 @@ import {
   joinPathFragments,
 } from '@nx/devkit';
 import { MyComponentGeneratorSchema } from './schema';
+import {plural} from 'pluralize';
 
 export async function myComponentGenerator(tree: Tree, options: MyComponentGeneratorSchema) {
   const userDir = process.cwd().split("hotel-reservation-ui")[1];
@@ -18,6 +19,7 @@ export async function myComponentGenerator(tree: Tree, options: MyComponentGener
     targetPath,
     {
       ...names(options.name),
+      pluralize: plural(options.name),
       tmpl: '',
     }
   );
