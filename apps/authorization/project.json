@@ -13,7 +13,6 @@
         "outputPath": "dist/apps/authorization",
         "index": "apps/authorization/src/index.html",
         "main": "apps/authorization/src/main.ts",
-        "polyfills": ["zone.js"],
         "tsConfig": "apps/authorization/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [

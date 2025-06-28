@@ -13,7 +13,6 @@
         "outputPath": "dist/projects/hotel-reservation-ui",
         "index": "projects/hotel-reservation-ui/src/index.html",
         "main": "projects/hotel-reservation-ui/src/main.ts",
-        "polyfills": ["zone.js"],
         "tsConfig": "projects/hotel-reservation-ui/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "aot": false,
