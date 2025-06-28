@@ -3,3 +3,9 @@ declare module 'user/routes' {
   const routes: Routes;
   export default routes;
 }
+
+declare module 'user/dashboard.items' {
+  import {DashboardItem} from '@components/models';
+  const items: DashboardItem[];
+  export default items;
+}

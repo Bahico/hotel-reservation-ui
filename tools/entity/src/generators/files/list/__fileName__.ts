@@ -12,7 +12,7 @@ import {EntityListPage} from '@components/pages';
     MfListComponent
   ]
 })
-export class <%= className %> extends EntityListPage<<%= className %>Model> {
+export default class <%= className %> extends EntityListPage<<%= className %>Model> {
   title = '<%= name %>';
 
   constructor(

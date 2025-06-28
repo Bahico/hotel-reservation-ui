@@ -15,7 +15,7 @@ export default class Login implements OnInit {
   password = '';
 
   ngOnInit() {
-    this.userService.logout()
+    // this.userService.logout()
   }
 
   login() {

@@ -18,5 +18,9 @@ export default {
       path: 'hotel',
       loadChildren: () => import('hotel/routes'),
     },
+    {
+      path: 'user',
+      loadChildren: () => import('user/routes'),
+    },
   ]
 } satisfies Route;
