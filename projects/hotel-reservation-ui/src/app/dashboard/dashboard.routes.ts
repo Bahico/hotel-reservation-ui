@@ -7,6 +7,10 @@ export default {
   canActivate: [authGuard],
   children: [
     {
+      path: 'profile',
+      loadChildren: () => import('profile/routes'),
+    },
+    {
       path: 'staff',
       loadChildren: () => import('staff/routes'),
     },
