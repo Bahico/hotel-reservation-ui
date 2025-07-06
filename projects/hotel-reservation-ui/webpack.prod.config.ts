@@ -17,12 +17,12 @@ export default withModuleFederation(
 
      * */
      remotes: [
-        ['staff', ' https://176.96.241.59:4201'],
-        ['organization', 'https://176.96.241.59:4202'],
-        ['hotel', 'https://176.96.241.59:4203'],
-        ['authorization', 'https://176.96.241.59:4205'],
-        ['user', 'https://176.96.241.59:4206'],
-        ['profile', 'https://176.96.241.59:4207'],
+        ['staff', ' http://176.96.241.59:4201'],
+        ['organization', 'http://176.96.241.59:4202'],
+        ['hotel', 'http://176.96.241.59:4203'],
+        ['authorization', 'http://176.96.241.59:4205'],
+        ['user', 'http://176.96.241.59:4206'],
+        ['profile', 'http://176.96.241.59:4207'],
       ]
 
   },
