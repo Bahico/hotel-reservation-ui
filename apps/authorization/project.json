@@ -14,7 +14,6 @@
         "index": "apps/authorization/src/index.html",
         "main": "apps/authorization/src/main.ts",
         "tsConfig": "apps/authorization/tsconfig.app.json",
-        "polyfills": ["zone.js"],
         "inlineStyleLanguage": "scss",
         "assets": [
           {
