@@ -1,4 +1,5 @@
 import { ModuleFederationConfig } from '@nx/module-federation';
+import {SharedLibraryConfig} from '@nx/module-federation/src/utils/models';
 
 const config: ModuleFederationConfig = {
   name: 'hotel-reservation-ui',
@@ -22,6 +23,10 @@ const config: ModuleFederationConfig = {
     'user',
     'profile',
   ],
+  shared(libraryName: string, sharedConfig: SharedLibraryConfig) {
+    console.log(libraryName, sharedConfig);
+    return sharedConfig;
+  },
   additionalShared: [
     {
       libraryName: '@ngx-translate/core',
@@ -44,9 +49,9 @@ const config: ModuleFederationConfig = {
       sharedConfig: {
         singleton: true,
         strictVersion: true,
-        requiredVersion: '19.2.14',
+        requiredVersion: '20.0.6',
       },
-    },
+    }
   ],
 };
 
