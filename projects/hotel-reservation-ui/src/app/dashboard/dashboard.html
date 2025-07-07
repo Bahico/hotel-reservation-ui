@@ -1,11 +1,15 @@
 <div class="dashboard" [class.collapsed]="sidebarCollapsed()">
-  @defer (on timer(100)) {
+  @defer (on viewport) {
     <dashboard-sidebar [dashboardItems]="dashboardItems()" [(collapsed)]="sidebarCollapsed"/>
+  } @placeholder (minimum 100) {
+    <span>Loading...</span>
   }
 
   <div class="dashboard-content">
-    @defer (on timer(100)) {
+    @defer (on viewport) {
       <dashboard-navbar/>
+    } @placeholder (minimum 100) {
+      <span>Loading...</span>
     }
     <router-outlet/>
   </div>
