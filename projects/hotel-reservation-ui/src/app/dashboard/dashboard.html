@@ -1,8 +1,12 @@
 <div class="dashboard" [class.collapsed]="sidebarCollapsed()">
-  <dashboard-sidebar [dashboardItems]="dashboardItems()" [(collapsed)]="sidebarCollapsed" />
+  @defer (on timer(100)) {
+    <dashboard-sidebar [dashboardItems]="dashboardItems()" [(collapsed)]="sidebarCollapsed"/>
+  }
 
   <div class="dashboard-content">
-    <dashboard-navbar />
-    <router-outlet />
+    @defer (on timer(100)) {
+      <dashboard-navbar/>
+    }
+    <router-outlet/>
   </div>
 </div>
