@@ -4,6 +4,7 @@ import { authGuard } from '@components/account';
 export default {
   path: 'dashboard',
   loadComponent: () => import('./dashboard').then(m => m.Dashboard),
+  canActivate: [authGuard],
   children: [
     {
       path: 'profile',
