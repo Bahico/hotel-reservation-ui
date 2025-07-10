@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { LoginService } from '@components/account';
+import {LoginService, TokenService} from '@components/account';
 
 @Component({
   imports: [CommonModule, FormsModule],
@@ -10,12 +10,13 @@ import { LoginService } from '@components/account';
   styleUrl: 'login.scss',
 })
 export default class Login implements OnInit {
-  private userService = inject(LoginService);
+  private readonly userService = inject(LoginService);
+  private readonly tokenService = inject(TokenService);
   username = '';
   password = '';
 
   ngOnInit() {
-    // this.userService.logout()
+    this.tokenService.tokenData = null;
   }
 
   login() {
